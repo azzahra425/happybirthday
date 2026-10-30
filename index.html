@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Ucapan Ulang Tahun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<main class="deck" id="deck">
+  <section class="slide is-active" id="slide-1" aria-label="Slide 1: Ucapan">
+    <div class="slide-inner hero">
+      <p class="eyebrow" id="tanggal">Hari yang spesial</p>
+      <h1 class="title">Selamat<br>Ulang Tahun,<br><em id="nama">Mami</em></h1>
+      <p class="lead" id="sapaan"></p>
+      <button class="btn" id="btn-buka" type="button">Lihat Ucapan</button>
+    </div>
+    <div class="orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  </section>
+
+  <section class="slide" id="slide-2" aria-label="Slide 2: Pesan dan foto">
+    <div class="slide-inner split">
+      <div class="note">
+        <p class="eyebrow">Untuk Mami</p>
+               <p class="message" id="pesan"></p>
+        <p class="signature">Dari <em id="dari">Uve</em></p>
+      </div>
+      <div class="photos" id="photos"></div>
+    </div>
+  </section>
+</main>
+
+<nav class="controls" aria-label="Navigasi slide">
+  <button class="nav-btn" id="prev" type="button" aria-label="Slide sebelumnya">&larr;</button>
+  <div class="dots" id="dots" role="tablist"></div>
+  <button class="nav-btn" id="next" type="button" aria-label="Slide berikutnya">&rarr;</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
